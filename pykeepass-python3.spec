@@ -2,7 +2,7 @@
 %global         abi_package %{nil}
 
 Name:           %{pypi_name}-python3
-Version:        3.0.3
+Version:        3.2.0
 Release:        1%{?dist}
 Summary:        Python library to interact with keepass databases (supports KDBX3 and KDBX4)
 
@@ -21,9 +21,7 @@ pykeepass library allows you to write entries to a KeePass database.
 
 %prep
 %setup -n %{pypi_name}-%{version}
-sed -i '1{/^#!.*env python/d}' pykeepass/pykeepass.py pykeepass/kdbx_parsing/kdbx*.py
-# Remove bundled egg-info
-rm -rf %{pypi_name}.egg-info
+
 
 %build
 export http_proxy=http://127.0.0.1:9/
