@@ -1,8 +1,8 @@
-%global 	pypi_name pykeepass
+%global 	      pypi_name pykeepass
 %global         abi_package %{nil}
 
 Name:           %{pypi_name}-python3
-Version:        3.2.0
+Version:        3.2.1
 Release:        1%{?dist}
 Summary:        Python library to interact with keepass databases (supports KDBX3 and KDBX4)
 
@@ -10,11 +10,20 @@ License:        GPLv3
 URL:            https://github.com/pschmitt/pykeepass
 Source:         https://github.com/pschmitt/pykeepass/archive/%{version}.tar.gz#/pykeepass-%{version}.tar.gz
 BuildRequires:  python3-dev
+BuildRequires:  libxslt-dev
+BuildRequires:  argon2-cffi argon2_cffi-python3
+BuildRequires:  construct-python3
+BuildRequires:  lxml-python3
+BuildRequires:  pycryptodomex
+BuildRequires:  python-dateutil-python3
 Requires:       construct-python3
 Requires:       python-future-python3
 Requires:       lxml-python3
 Requires:       pycryptodome-python3
 Requires:       python-dateutil-python3
+Requires:       libxslt
+Requires:       pycryptodomex
+Requires:       argon2_cffi-python3
 
 %description
 pykeepass library allows you to write entries to a KeePass database.
