@@ -11,7 +11,7 @@ URL:            https://github.com/pschmitt/pykeepass
 Source:         https://github.com/pschmitt/pykeepass/archive/%{version}.tar.gz#/pykeepass-%{version}.tar.gz
 BuildRequires:  python3-dev
 BuildRequires:  libxslt-dev
-BuildRequires:  argon2-cffi argon2_cffi-python3
+BuildRequires:  argon2-cffi argon2-cffi-python3
 BuildRequires:  construct-python3
 BuildRequires:  lxml-python3
 BuildRequires:  pycryptodomex
@@ -23,7 +23,7 @@ Requires:       pycryptodome-python3
 Requires:       python-dateutil-python3
 Requires:       libxslt
 Requires:       pycryptodomex
-Requires:       argon2_cffi-python3
+Requires:       argon2-cffi-python3
 
 %description
 pykeepass library allows you to write entries to a KeePass database.
