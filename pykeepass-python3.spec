@@ -14,7 +14,7 @@ BuildRequires:  libxslt-dev
 BuildRequires:  argon2-cffi argon2-cffi-python3
 BuildRequires:  construct-python3
 BuildRequires:  lxml-python3
-BuildRequires:  pycryptodomex
+BuildRequires:  pycryptodomex-python3
 BuildRequires:  python-dateutil-python3
 Requires:       construct-python3
 Requires:       python-future-python3
@@ -22,7 +22,7 @@ Requires:       lxml-python3
 Requires:       pycryptodome-python3
 Requires:       python-dateutil-python3
 Requires:       libxslt
-Requires:       pycryptodomex
+Requires:       pycryptodomex-python3
 Requires:       argon2-cffi-python3
 
 %description
