@@ -1,4 +1,4 @@
-%global 	      pypi_name pykeepass
+%global         pypi_name pykeepass
 %global         abi_package %{nil}
 
 Name:           %{pypi_name}-python3
@@ -19,7 +19,6 @@ BuildRequires:  python-dateutil-python3
 Requires:       construct-python3
 Requires:       python-future-python3
 Requires:       lxml-python3
-Requires:       pycryptodome-python3
 Requires:       python-dateutil-python3
 Requires:       libxslt
 Requires:       pycryptodomex-python3
