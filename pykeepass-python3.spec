@@ -47,7 +47,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 python3 -tt setup.py build  install --root=%{buildroot}
-rm -rvf %{buildroot}/usr/lib/python3*/tests
+rm -rvf %{buildroot}/usr/lib/python3*/site-packages/tests
 
 
 %files
