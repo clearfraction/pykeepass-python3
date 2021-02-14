@@ -2,10 +2,9 @@
 %global         abi_package %{nil}
 
 Name:           %{pypi_name}-python3
-Version:        3.2.1
+Version:        4.0.0
 Release:        1%{?dist}
 Summary:        Python library to interact with keepass databases (supports KDBX3 and KDBX4)
-
 License:        GPLv3
 URL:            https://github.com/pschmitt/pykeepass
 Source:         https://github.com/pschmitt/pykeepass/archive/%{version}.tar.gz#/pykeepass-%{version}.tar.gz
@@ -32,9 +31,6 @@ pykeepass library allows you to write entries to a KeePass database.
 
 
 %build
-export http_proxy=http://127.0.0.1:9/
-export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
 export SOURCE_DATE_EPOCH=1572997294
 export GCC_IGNORE_WERROR=1
