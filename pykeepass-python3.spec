@@ -6,8 +6,8 @@ Version:        4.0.0
 Release:        1%{?dist}
 Summary:        Python library to interact with keepass databases (supports KDBX3 and KDBX4)
 License:        GPLv3
-URL:            https://github.com/pschmitt/pykeepass
-Source:         https://github.com/pschmitt/pykeepass/archive/%{version}.tar.gz#/pykeepass-%{version}.tar.gz
+URL:            https://github.com/libkeepass/pykeepass
+Source:         https://github.com/libkeepass/pykeepass/archive/%{version}.tar.gz#/pykeepass-%{version}.tar.gz                
 BuildRequires:  python3-dev
 BuildRequires:  libxslt-dev
 BuildRequires:  argon2-cffi argon2-cffi-python3
